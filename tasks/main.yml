@@ -8,7 +8,7 @@
   copy: src=files/dynmotd dest={{ FILE_COPY_DIR }} mode=0755
 
 - name: Install package 
-  yum: 
+  apt: 
     name:
       - figlet
       - cowsay

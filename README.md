@@ -4,18 +4,19 @@
 ~]# vim requirements.yml
 ---
 roles:
-  - src: https://github.com/dengyouf/Ansible-Galaxy-Motd.git
+  - src: https://github.com/dengyouf/ansible-galaxy-motd.git
     scm: git
     version: main
 ```
 
 ```
 ~]# ansible-galaxy install -r requirements.yml
-- extracting Ansible-Galaxy-Motd to /root/.ansible/roles/Ansible-Galaxy-Motd
-- Ansible-Galaxy-Motd (main) was installed successfully
+Starting galaxy role install process
+- extracting ansible-galaxy-motd to /Users/dengyouf/.ansible/roles/ansible-galaxy-motd
+- ansible-galaxy-motd (main) was installed successfully
 ```
 
-- ` ansible-playbook -i .ansible/roles/Ansible-Galaxy-Motd/tests/inventory  .ansible/roles/Ansible-Galaxy-Motd/tests/test.yml`
+- ` ansible-playbook -i .ansible/roles/ansible-galaxy-motd/tests/inventory  .ansible/roles/ansible-galaxy-motd/tests/test.yml`
 
 ## 使用 Galaxy Server `https://galaxy.ansible.com/`
 
@@ -24,7 +25,7 @@ roles:
 ```
 ~]# ansible-galaxy install dengyouf.ansible_galaxy_motd
 - downloading role 'ansible_galaxy_motd', owned by dengyouf
-- downloading role from https://github.com/dengyouf/Ansible-Galaxy-Motd/archive/main.tar.gz
+- downloading role from https://github.com/dengyouf/ansible-galaxy-motd/archive/main.tar.gz
 - extracting dengyouf.ansible_galaxy_motd to /root/.ansible/roles/dengyouf.ansible_galaxy_motd
 - dengyouf.ansible_galaxy_motd (main) was installed successfully
 ```
